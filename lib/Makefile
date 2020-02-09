@@ -94,14 +94,12 @@ OBJ = $(FILES:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ) $(PATH_PF)$(PFL)
+$(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c libft.h
 	gcc $(FLAGS) -I libft.h -I ft_printf.h -c $*.c
 
-$(PATH_PF)$(PFL):
-	make -C $(PATH_PF)
 
 clean:
 	/bin/rm -f $(OBJ)
