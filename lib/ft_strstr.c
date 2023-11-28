@@ -34,12 +34,10 @@ char		*ft_strstr(const char *hs, const char *nd)
 {
 	int			i;
 	int			j;
-	int			k;
 	const char	*tmp;
 
 	i = 0;
 	j = 0;
-	k = 0;
 	if (nd[0] == '\0')
 		return ((char*)hs);
 	while (hs[i])

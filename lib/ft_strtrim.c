@@ -42,10 +42,8 @@ static int		ft_check_trim_back(char const *s, int len, int i)
 static int		ft_check_trim_front(char const *s)
 {
 	int len;
-	int cpt;
 	int i;
 
-	cpt = 0;
 	i = 0;
 	len = ft_strlen(s);
 	while (s[i] == '\t' || s[i] == '\n' || s[i] == ' ' || s[i] == '\0')

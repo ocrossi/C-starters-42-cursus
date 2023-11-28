@@ -17,7 +17,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-#include "ft_printf.h"
 
 # define BUFF_SIZE 1000
 # define M_LST1 "content_size = "
